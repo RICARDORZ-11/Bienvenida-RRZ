@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <title>DISEÑOS Y SOLDADURA RRZ</title>
+    <style>
+        body {
+    margin: 0;
+    background: linear-gradient(#728FCE, #1D4DD1);
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.95;
+}
+
+.logo__titulo {
+    display: inline-flex;
+    margin-left: 2rem;
+}
+
+.logo__encabezado {
+    width: 65px;
+    height: auto
+}
+
+.titulo {
+    margin: 0;
+    font-size: 1.5rem;
+    align-content: center;
+}
+
+.navegacion__item {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition-property: color, transform;
+    transition-duration: 0.3s;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.navegacion {
+    margin-right: 2rem;
+}
+
+.navegacion__item:hover {
+    color: #728FCE;
+    transform: scale(1.1);
+}
+
+.seccion__bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 5rem;
+}
+
+.seccion__bienvenida--subtitulo {
+    font-size: 2.3rem;
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 5px;
+    margin-top: 5rem;
+}
+
+.seccion__bienvenida--descripcion {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #222;
+    font-weight: bold;
+    margin: auto 5rem;
+    margin-top: 3rem;
+    line-height: 2rem;
+    text-shadow: 0 0 5px #aaa;
+}
+
+.seccion__bienvenida--descripcion--distribucion {
+    margin: auto 5rem;
+    margin-top: 1.5rem;
+    font-size: 1.40rem;
+    text-decoration: underline;
+}
+
+.seccion__bienvenida--boton {
+    margin-bottom: 20rem;
+    margin-top: 4rem;
+    background-color: #423A7F;
+    padding: 0.75rem 1.5rem;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: #1D4DD1;
+    box-shadow: 0 0 15px 0px #000;
+    font-weight: bolder;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.3s;
+}
+
+.seccion__bienvenida--boton:hover {
+    transform: translatey(-10px) scale(1.1);
+    box-shadow: 0 0 30px 0px #aaa;
+}
+    </style>
+</head>
+<body id="inicio">
+    <header class="encabezado">
+        <div class="logo__titulo">
+            <img src="logo1.3.png" alt="Logo de DISEÑOS Y SOLDADURA RRZ" class="logo__encabezado">
+            <h1 class="titulo">
+                DISEÑOS Y SOLDADURA RRZ
+            </h1>
+        </div>
+        <nav class="navegacion">
+            <a href="#inicio" class="navegacion__item">INICIO</a>
+            <a href="" class="navegacion__item">PRODUCTOS</a>
+            <a href="" class="navegacion__item">CONTACTO</a>
+        </nav>
+    </header>
+    <main>
+        <section class="seccion__bienvenida">
+            <h2 class="seccion__bienvenida--subtitulo">Bienvenido a DISEÑOS Y SOLDADURA RRZ</h2>
+            <p class="seccion__bienvenida--descripcion">
+                Somos una empresa dedicada a la creación de piezas únicas en acero, combinando funcionalidad y estética para transformar tus espacios.
+                Cada pieza es el resultado de un trabajo artesanal donde la calidad y el diseño van de la mano. Fabricamos maceteros, percheros, muebles y proyectos personalizados en acero, pensados para aportar carácter, elegancia y resistencia a cualquier espacio.
+            </p>
+            <p class="seccion__bienvenida--descripcion seccion__bienvenida--descripcion--distribucion">
+                Inspírate con nuestro catálogo y descubre el diseño que mejor se adapta a tu estilo.
+            </p>
+            <a href="" class="seccion__bienvenida--boton">Ver Catálogo</a>
+        </section>
+    </main>
+</body>
+</html>
