@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    background: linear-gradient(#4C09C8 20%, #6F27F5 80%);
+    background: linear-gradient(#ececec 20%, #020202);
 }
 
 .encabezado {
@@ -98,25 +98,27 @@ body {
 .seccion__bienvenida--boton {
     margin-bottom: 20rem;
     margin-top: 4rem;
-    background-color: #423A7F;
+    background: radial-gradient(#444, #777);
     padding: 0.75rem 1.5rem;
-    color: #bbb;
+    color: #999;
     text-decoration: none;
     font-size: 1.25rem;
     border-radius: 10px;
     border-style: ridge;
     border-width: 5px;
-    border-color: #1D4DD1;
+    border-color: auto;
     box-shadow: 0 0 15px 0px #000;
     font-weight: bolder;
     font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition-property: transform, box-shadow;
+    transition-property: transform, box-shadow, color, text-shadow;
     transition-duration: 0.3s;
 }
 
 .seccion__bienvenida--boton:hover {
     transform: translatey(-10px) scale(1.1);
     box-shadow: 0 0 30px 0px #aaa;
+    color: #fff;
+    text-shadow: 0 0 30px #fff;
 }
 
 @media (max-width: 480px) {
@@ -258,7 +260,7 @@ body {
         </div>
         <nav class="navegacion">
             <a href="#inicio" class="navegacion__item">INICIO</a>
-            <a href="" class="navegacion__item">PRODUCTOS</a>
+            <a href="https://ricardorz-11.github.io/Catalogo-RRZ/" class="navegacion__item">PRODUCTOS</a>
             <a href="" class="navegacion__item">CONTACTO</a>
         </nav>
     </header>
@@ -267,12 +269,12 @@ body {
             <h2 class="seccion__bienvenida--subtitulo">Bienvenido a DISEÑOS Y SOLDADURA RRZ</h2>
             <p class="seccion__bienvenida--descripcion">
                 Somos una empresa dedicada a la creación de piezas únicas en acero, combinando funcionalidad y estética para transformar tus espacios.
-                Cada pieza es el resultado de un trabajo artesanal donde la calidad y el diseño van de la mano. Fabricamos maceteros, percheros, muebles y proyectos personalizados en acero, pensados para aportar carácter, elegancia y resistencia a cualquier espacio.
+                Cada pieza es el resultado de un trabajo artesanal donde la calidad y el diseño van de la mano. Fabricamos maceteros, percheros, muebles y proyectos personalizados en hierro forjado, pensados para aportar carácter, elegancia y resistencia a cualquier espacio.
             </p>
             <p class="seccion__bienvenida--descripcion seccion__bienvenida--descripcion--distribucion">
                 Inspírate con nuestro catálogo y descubre el diseño que mejor se adapta a tu estilo.
             </p>
-            <a href="" class="seccion__bienvenida--boton">Ver Catálogo</a>
+            <a href="https://ricardorz-11.github.io/Catalogo-RRZ/" class="seccion__bienvenida--boton">Ver Catálogo</a>
         </section>
     </main>
 </body>
