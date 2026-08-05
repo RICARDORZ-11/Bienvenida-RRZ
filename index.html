@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>DISEÑOS Y SOLDADURA RRZ</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 body {
     margin: 0; 
@@ -64,11 +64,11 @@ body {
 
 .header-flecha {
     z-index: 10;
-    position: relative;
+    position: absolute;
     min-height: 9rem;
     max-height: 11rem;
     max-width: 5rem;
-    bottom: 0rem;
+    bottom: 5rem;
 }
 
 .titulo-logo {
@@ -89,7 +89,6 @@ body {
     position: sticky;
     top: 0;
     opacity: .97;
-    z-index: 100;
 }
 
 .logo {
@@ -115,10 +114,6 @@ body {
 
 .nav-link:first-child {
     margin-right: .2rem;
-}
-
-.nav-link:hover {
-    color: #E0B04A99;
 }
 
 .aside-titulo {
@@ -149,7 +144,6 @@ main {
     gap: 2rem;
     padding: 1rem;
     justify-content: center;
-    z-index: 10;
 }
 
 .porta-llaves {
@@ -159,14 +153,6 @@ main {
     text-align: center;
     background-image: url(casita-perchero-opaco.jpeg);
     background-size: cover;
-    transition-property: background-image, color, transform;
-    transition-duration: .5s;
-}
-
-.porta-llaves:hover {
-    color: #000;
-    background-image: url(casita-perchero-hover.jpeg);
-    transform: translateY(-10px);
 }
 
 main a{
@@ -202,15 +188,6 @@ main a p {
     padding: .4rem 3rem;
     background-color: #E0B04Aee;
     border-radius: 5px;
-    transition-property: transform, color, background-color, box-shadow;
-    transition-duration: .3s;
-}
-
-.aside-contacto a:hover {
-    transform: scale(1.03) translateY(-10px);
-    color: #000;
-    background-color: #E0B04A99;
-    box-shadow: 5px 5px 10px 0 #000;
 }
 
 footer {
@@ -238,11 +215,11 @@ footer p {
 
     .header-flecha {
         z-index: 10;
-        position: relative;
+        position: absolute;
         min-height: 6rem;
         max-height: 8rem;
         max-width: 4rem;
-        bottom: 0rem;
+        bottom: 2.5rem;
     }
 
     .nombre {
@@ -273,8 +250,6 @@ footer p {
         height: 7.2rem;
         width: 6rem;
     }
-
-
 
     footer {
         display: flex; 
@@ -417,6 +392,7 @@ footer p {
 
     .navbar {
         padding: 0;
+        z-index: 10;
     }
 
     .navbar-links {
@@ -424,6 +400,10 @@ footer p {
         align-items: center;
         gap: 1rem;
         font-size: 1rem;
+    }
+
+    .nav-link:hover {
+        color: #E0B04A99;
     }
 
     .logo {
@@ -469,6 +449,19 @@ footer p {
         grid-template-rows: repeat(3,30vh);
         gap: 2rem;
         padding: 1rem;
+        z-index: 1;
+    }
+
+    .porta-llaves {
+        transition-property: background-image, color, transform;
+        transition-duration: .3s;
+        transition-delay: smooth;
+    }
+
+    .porta-llaves:hover {
+        color: #000;
+        background-image: url(casita-perchero-hover.jpeg);
+        transform: translateY(-10px);
     }
 
     main a{
@@ -487,6 +480,15 @@ footer p {
 
     .aside-contacto {
         padding-bottom: 2rem;
+        transition-property: transform, color, background-color, box-shadow;
+        transition-duration: .3s;
+    }
+
+    .aside-contacto a:hover {
+        transform: scale(1.03) translateY(-10px);
+        color: #000;
+        background-color: #E0B04A99;
+        box-shadow: 5px 5px 10px 0 #000;
     }
 
     footer p {
@@ -550,7 +552,7 @@ footer p {
             <h3>
                 Contáctanos para hacer tu pedido al...
             </h3>
-            <a href="https://wa.me/522461313240?text=Hola,%20quiero%20consultar%20un%20producto" target="_blank" rel="noopener noreferrer"> ---&gt; +52 246 131 3240 &lt;---</a> 
+            <a href="https://wa.me/522461313240?text=Hola,%20quiero%20consultar%20un%20producto20%" target="_blank" rel="noopener noreferrer"> ---&gt; +52 246 131 3240 &lt;---</a> 
         </aside>
     </div>
     <footer>
