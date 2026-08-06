@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>DISEÑOS Y SOLDADURA RRZ</title>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 body {
     margin: 0; 
@@ -151,9 +151,37 @@ main {
     justify-content: center;
     align-content: center;
     text-align: center;
-    background-image: url(casita-perchero-opaco.jpeg);
+    background-image: url(porta-llaves.png);
     background-size: cover;
 }
+
+.percheros {
+    border: 1px solid #000; 
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-image: url(perchero.png);
+    background-size: cover;
+}
+
+.maceteros-piso {
+    border: 1px solid #000; 
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-image: url(macetero-piso.png);
+    background-size: cover;
+}
+
+.maceteros-pared {
+    border: 1px solid #000; 
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-image: url(macetero-pared.png);
+    background-size: cover;
+}
+
 
 main a{
     max-width: 100%;
@@ -446,13 +474,17 @@ footer p {
     main {
         display: grid;
         grid-template-columns: repeat(3,30%);
-        grid-template-rows: repeat(3,30vh);
+        grid-template-rows: repeat(2,30vh);
         gap: 2rem;
         padding: 1rem;
         z-index: 1;
     }
 
-    .porta-llaves {
+    .maceteros-pared {
+        grid-column-start: 2;
+    }
+
+    .porta-llaves, .percheros, .maceteros-piso, .maceteros-pared {
         transition-property: background-image, color, transform;
         transition-duration: .3s;
         transition-delay: smooth;
@@ -460,7 +492,31 @@ footer p {
 
     .porta-llaves:hover {
         color: #000;
-        background-image: url(casita-perchero-hover.jpeg);
+        background-image: url(porta-llaves-hover.png);
+        transform: translateY(-10px);
+    }
+
+    .percheros:hover {
+        color: #000;
+        background-image: url(perchero-hover.png);
+        transform: translateY(-10px);
+    }
+
+    .percheros:hover {
+        color: #000;
+        background-image: url(perchero-hover.png);
+        transform: translateY(-10px);
+    }
+
+    .maceteros-piso:hover {
+        color: #000;
+        background-image: url(macetero-piso-hover.png);
+        transform: translateY(-10px);
+    }
+
+    .maceteros-pared:hover {
+        color: #000;
+        background-image: url(macetero-pared-hover.png);
         transform: translateY(-10px);
     }
 
@@ -476,12 +532,12 @@ footer p {
         border: 6px groove #000;
         padding: .7rem 4rem;
         font-size: 1.3rem;
+        transition-property: transform, color, background-color, box-shadow;
+        transition-duration: .3s;
     }
 
     .aside-contacto {
         padding-bottom: 2rem;
-        transition-property: transform, color, background-color, box-shadow;
-        transition-duration: .3s;
     }
 
     .aside-contacto a:hover {
@@ -532,19 +588,16 @@ footer p {
         <hr>
         <main>
                 <a href="#" class="porta-llaves">
-                    <p>Percheros Porta Llaves</p>
+                    <p>Porta Llaves</p>
                 </a>
-                <a href="" class="porta-llaves">
+                <a href="" class="percheros">
+                    <p>Percheros</p>
                 </a>
-                <a href="" class="porta-llaves">
+                <a href="" class="maceteros-piso">
+                    <p>Maceteros Piso</p>
                 </a>
-                <a href="" class="porta-llaves">
-                </a>
-                <a href="" class="porta-llaves">
-                </a>
-                <a href="" class="porta-llaves">
-                </a>
-                <a href="" class="porta-llaves">
+                <a href="" class="maceteros-pared">
+                    <p>Maceteros Pared</p>
                 </a>
         </main>
         <hr>
